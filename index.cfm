@@ -81,6 +81,7 @@
         width:50px;
         margin:10px;
         display:inline-block;
+	z-index:50;
 
     }
     .clip-inner img {
@@ -416,9 +417,7 @@
 
 <script>
 
-    $('.clip-inner').draggable({
-        connectToSortable: ".container-canva"
-    });
+    $('.clip-inner').draggable();
 
 
     $('#map').css("height",window.innerHeight-51+"px");
