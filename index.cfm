@@ -1,7 +1,3 @@
-<cfscript>
-    local.timestamp = (now());
-    local.authIP = "71.56.121.76";
-</cfscript>
 <!DOCTYPE html>
 <html lang="en">
 
