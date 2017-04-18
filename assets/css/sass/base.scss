@@ -1,0 +1,13 @@
+@import 'mixins';
+
+.box { @include border-radius(10px); }
+
+.darKGreen{
+  background-color: darken($green, 10%)
+}
+
+.lightGreen {
+  @include makeAbsolute(10,0,10,0);
+  background-color: lighten($green, 10%);
+  @include transish(all,200);
+}

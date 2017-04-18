@@ -1,0 +1,9 @@
+/* line 8, I:/Worldwidesteve/wwwroot/Autosketch/assets/css/sass/mixins.sass */
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=../mixins.map */

@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "sass/base.css",
+	"sources": [
+		"sass/base.scss",
+		"sass/_mixins.scss"
+	],
+	"sourcesContent": [
+		"@import 'mixins';\r\n\r\n.box { @include border-radius(10px); }\r\n\r\n.darKGreen{\r\n  background-color: darken($green, 10%)\r\n}\r\n\r\n.lightGreen {\r\n  @include makeAbsolute(10,0,10,0);\r\n  background-color: lighten($green, 10%);\r\n  @include transish(all,200);\r\n}",
+		"$width: 960px;\r\n$minHeight: 100%;\r\n$green: #009900;\r\n$font-stack: 'Open Sans', \"Helvetica Neue\", Arial, Helvetica, Arial, sans-serif;\r\n\r\n@mixin border-radius($radius) {\r\n  -webkit-border-radius: $radius;\r\n  -moz-border-radius: $radius;\r\n  -ms-border-radius: $radius;\r\n  border-radius: $radius;\r\n}\r\n\r\n@mixin makeAbsolute($t,$r,$b,$l) {\r\n  position: absolute;\r\n  top: $t+px;\r\n  right: $r+px;\r\n  bottom: $b+px;\r\n  left: $l+px;\r\n}\r\n\r\n@mixin makeFixed($t,$r,$b,$l) {\r\n  position: fixed;\r\n  top: $t+px;\r\n  right: $r+px;\r\n  bottom: $b+px;\r\n  left: $l+px;\r\n}\r\n\r\n@mixin noselect(){\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -khtml-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n@mixin transish($prop,$speed){\r\n  -webkit-transition: $prop $speed+ms ease;\r\n  -moz-transition: $prop $speed+ms ease;\r\n  -o-transition: $prop $speed+ms ease;\r\n  transition: $prop $speed+ms ease;\r\n}\r\n\r\n@mixin transform($tVal){\r\n  -webkit-transform: $tVal;\r\n  -ms-transform: $tVal;\r\n  transform: $tVal;\r\n}\r\n\r\n@mixin gradient($direction,$c1,$c2){\r\n  background: linear-gradient(to $direction $c1 0%, $c2 100%);\r\n}\r\n\r\n@mixin filter($filter,$amount){\r\n  -webkit-filter: $filter($amount);\r\n  filter: $filter($amount);\r\n}\r\n\r\n"
+	],
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;ECIH,qBAAqB,EDJO,IAAI;ECKhC,kBAAkB,EDLU,IAAI;ECMhC,iBAAiB,EDNW,IAAI;ECOhC,aAAa,EDPe,IAAI;CAAK;;;AAEvC,AAAA,UAAU,CAAA;EACR,gBAAgB,EAAE,OAAM;CACzB;;;AAED,AAAA,WAAW,CAAC;ECKV,QAAQ,EAAE,QAAS;EACnB,GAAG,EDLmB,IAAE;ECMxB,KAAK,EDNoB,GAAC;ECO1B,MAAM,EDPqB,IAAE;ECQ7B,IAAI,EDR0B,GAAC;EAC/B,gBAAgB,EAAE,OAAO;EC4BzB,kBAAkB,ED3BA,GAAG,CAAC,KAAG,CC2BW,IAAI;EACxC,eAAe,ED5BG,GAAG,CAAC,KAAG,CC4BQ,IAAI;EACrC,aAAa,ED7BK,GAAG,CAAC,KAAG,CC6BM,IAAI;EACnC,UAAU,ED9BQ,GAAG,CAAC,KAAG,CC8BG,IAAI;CD7BjC",
+	"names": []
+}

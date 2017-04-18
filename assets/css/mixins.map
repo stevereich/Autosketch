@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "sass/mixins.css",
+	"sources": [
+		"sass/mixins.sass"
+	],
+	"sourcesContent": [
+		"$width: 960px;\n@mixin border-radius($radius) {\n  -webkit-border-radius: $radius;\n  -moz-border-radius:    $radius;\n  -ms-border-radius:     $radius;\n  border-radius:         $radius; }\n\n.box {\n  @include border-radius(10px); }\n"
+	],
+	"mappings": ";AAOA,AAAA,IAAI,CAAC;EALH,qBAAqB,EAME,IAAI;EAL3B,kBAAkB,EAKK,IAAI;EAJ3B,iBAAiB,EAIM,IAAI;EAH3B,aAAa,EAGU,IAAI;CAAI",
+	"names": []
+}
